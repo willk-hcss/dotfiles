@@ -10,7 +10,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-sensible'
 Plugin 'bling/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'scrooloose/nerdtree'
+"Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'tpope/vim-surround'
@@ -39,7 +39,7 @@ filetype plugin indent on
 
 " Set the vim theme
 set background=dark
-colorscheme 0x7A69_dark
+"colorscheme 0x7A69_dark
 let g:solarized_termcolors=256
 "let g:solarized_termtrans=1
 
@@ -173,11 +173,11 @@ if exists('$ITERM_PROFILE')
 end
 
 " NERDTree
-nmap <leader>t :NERDTreeToggle<CR>
-let NERDTreeHighlightCursorline=1
+" nmap <leader>t :NERDTreeToggle<CR>
+" let NERDTreeHighlightCursorline=1
 
 " Start NERDTree automagically
-autocmd vimenter * NERDTree
+" autocmd vimenter * NERDTree
 
 " START: NERDCommenter Stuff
 
