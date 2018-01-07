@@ -1,6 +1,6 @@
 [user]
-	name = Greg Major
-	email = greg.b.major@gmail.com
+	name = Will Killian
+	email = github.user@forkmantis.com
 [core]
 	# Set a global .gitignore file
 	excludesfile = /Users/greg/.gitignore_global
