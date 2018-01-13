@@ -1,4 +1,4 @@
-# Greg's Dotfiles
+# forkmantis's take on Greg's Dotfiles
 
 **Dotfile Management for the Obsessive Compulsive**
 
@@ -6,7 +6,7 @@ Dotfiles are files that contain configuration settings in Unix (and variant) sys
 
 These are my dotfiles.
 
-## Credit Where Credit Is Due
+## Greg: Credit Where Credit Is Due
 
 Up until this current iteration, I used to manage my dotfiles by putting them all in a folder (`~/dotfiles`) and then symlinking them with a little shell script. It worked and, generally speaking I was happy with it. Prior to this I did what most people did and simply had different versions of dotfiles strewn across all my computers.
 
@@ -39,7 +39,7 @@ Run this:
 
 ```sh
 cd ~
-git clone https://github.com/gregmajor/dotfiles.git ~/dotfiles
+git clone https://github.com/forkmantis/dotfiles.git ~/dotfiles
 cd ~/dotfiles
 ./redot
 ```
@@ -48,5 +48,5 @@ The `redot` script will walk you through everything and won't make any change to
 
 ## Bugs
 
-First and foremost, please remember that these are my *actual* dotfiles. You can simply browse through the source and steal what you like or you can go so far as to fork this repo and start making changes that suit your needs. I try to make sure everything works on MacOS, Linux, and even on Windows (a'la Git Bash and such), but I can't make any warranties or promises. That being said, if you do stumble on a bug, please [open an issue](https://github.com/gregmajor/dotfiles/issues) I'll have a look!
+First and foremost, please remember that these are my *actual* dotfiles. You can simply browse through the source and steal what you like or you can go so far as to fork this repo and start making changes that suit your needs. I try to make sure everything works on MacOS, Linux, and even on Windows (a'la Git Bash and such), but I can't make any warranties or promises. That being said, if you do stumble on a bug, please [open an issue](https://github.com/forkmantis/dotfiles/issues) I'll have a look!
 
