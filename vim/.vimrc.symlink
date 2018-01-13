@@ -1,218 +1,84 @@
-set nocompatible
-filetype off
+set nocompatible              " be iMproved, required
+filetype off                  " required
+set number                    " turn on line numbers
+set relativenumber            " turn on relative line numbers
+set hidden                    " Allow switching buffers without saving
+set cursorline                " Highlight current line so you don't have to search for the cursor
 
-let mapleader=","
+filetype plugin indent on    " required
 
-" Configure Vundle
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'tpope/vim-sensible'
-Plugin 'bling/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-"Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/syntastic'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-speeddating'
-Plugin 'tpope/vim-commentary'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'jeffkreeftmeijer/vim-numbertoggle'
-Plugin 'tomtom/tcomment_vim'
-Plugin 'vim-scripts/CycleColor'
-Plugin 'flazz/vim-colorschemes'
-Plugin 'wincent/command-t'
-Plugin 'jeetsukumaran/vim-buffergator'
-Plugin 'ConradIrwin/vim-bracketed-paste'
+" make arrow keys work in iTerm on OS X: http://isaacschlueter.com/2007/04/fix-for-vis-broken-arrow-key-support-in-iterm/
+"set term=linux
 
-" Provides :ToggleWhitespace and :StripWhitespace
-Plugin 'ntpeters/vim-better-whitespace'
+" Automatically reload .vimrc when changing
+autocmd! bufwritepost .vimrc source %
 
-" Plugin 'Yggdroot/indentLine'
-" Plugin 'nathanelkane/vim-indent-guides'
+"/*[ Settings ]*******************************************************************/
 
-" Vundle needs this, too
-call vundle#end()
-filetype plugin indent on
+" Set syntax highlighting on
+:syntax on
 
-" --- END VUNDLE ---
-
-" Set the vim theme
-set background=dark
-"colorscheme 0x7A69_dark
-let g:solarized_termcolors=256
-"let g:solarized_termtrans=1
-
-" Set the airline theme
-let g:airline_theme='luna'
-
-" Enable the buffer list with airline
-let g:airline#extensions#tabline#enabled = 1
-
-" Show just the filename in the airline tab
-let g:airline#extensions#tabline#fnamemod = ':t'
-
-" Toggle indent on paste with F2
-nnoremap <F2> :set invpaste paste?<CR>
-set pastetoggle=<F2>
-set showmode
-
-" Enhance command-line completion
-set wildmenu
-
-" Allow cursor keys in insert mode
-set esckeys
-
-" Allow backspace in insert mode
-set backspace=indent,eol,start
-
-" Optimize for fast terminal connections
-set ttyfast
-
-" Add the g flag to search/replace by default
-set gdefault
-
-" Dont create backups when editing files in certain directories
-set backupskip=/tmp/*,/private/tmp/*
-
-" Enable line numbers
-set relativenumber
-set number
-
-" Stop redrawing during macros and whatnot
-set lazyredraw
-
-" Show matching brackets when text indicator is over them
-set showmatch
-
-" How many tenths of a second to blink when matching brackets
-set mat=2
-
-" Enable syntax highlighting
-syntax enable
-
-" Highlight current line
-set cursorline
-
-" tabstop
-" The width of a hard tabstop measured in "spaces" -- effectively the (maximum) width of an actual tab character.
-"
-" shiftwidth
-" The size of an "indent". It's also measured in spaces, so if your code base indents with tab characters then you want shiftwidth to equal the number of tab characters times tabstop. This is also used by things like the =, > and < commands.
-"
-" softtabstop
-" Setting this to a non-zero value other than tabstop will make the tab key (in insert mode) insert a combination of spaces (and possibly tabs) to simulate tab stops at this width.
-"
-" expandtab
-" Enabling this will make the tab key (in insert mode) insert spaces instead of tab characters. This also affects the behavior of the retab command.
-"
-" smarttab
-" Enabling this will make the tab key (in insert mode) insert spaces or tabs to go to the next indent of the next tabstop when the cursor is at the beginning of a line (i.e. the only preceding characters are whitespace).
-
-" Make tabs as wide as four spaces
+" Set standard setting for PEAR coding standards
 set tabstop=4
-set softtabstop=4
 set shiftwidth=4
+
+" Auto expand tabs to spaces
 set expandtab
 
-" Be smart when using tabs
-set smarttab
+" Auto indent after a {
+set autoindent
+set smartindent
 
-" Auto and smart indent
-set ai
-set si
-
-" Highlight searches
-set hlsearch
-
-" Ignore case of searches
-set ignorecase
-
-" Search as characters are entered
+" Use incremental searching
 set incsearch
 
-" Always show status line
-set laststatus=2
+" Jump 5 lines when running out of the screen
+set scrolljump=5
 
-" Enable mouse in all modes
-set mouse=a
+" Indicate jump out of the screen when 3 lines before end of the screen
+set scrolloff=2
 
-" Disable error bells
-set noerrorbells
-set novisualbell
+" Correct indentation after opening a phpdocblock and automatic * on every
+" line
+set formatoptions=qroct
 
-" Dont reset cursor to start of line when moving around.
-set nostartofline
+" automatically update the file if it was changed outside of VIM
+:set autoread
 
-" Show the cursor position
-set ruler
+" make sure searches are highlighted
+:set hls
 
-" Dont show the intro message when starting Vim
-set shortmess=atI
+" Show ruler on command line w/ current line & column number
+:set ruler
 
-" Show the current mode
-set showmode
+" When closing parens, show opening paren character
+:set showmatch
 
-" Show the filename in the window titlebar
-set title
+" Show current edit mode, and wether or not file has been edited since last save
+:set showmode
 
-" Show the (partial) command as it is being typed
-set showcmd
+" case insensitive searches
+:set ignorecase
 
-" Start scrolling three lines before the horizontal window border
-set scrolloff=3
+":filetype plugin on
+":helptags ~/.vim/doc
 
-if exists('$ITERM_PROFILE')
-        if exists('$TMUX') 
-                let &t_SI = "\<Esc>[3 q"
-                let &t_EI = "\<Esc>[0 q"
-        else
-                let &t_SI = "\<Esc>]50;CursorShape=1\x7"
-                let &t_EI = "\<Esc>]50;CursorShape=0\x7"
-        endif
-end
+nnoremap <silent> [b :bprevious<CR>
+nnoremap <silent> ]b :bnext<CR>
+nnoremap <silent> [B :bfirst<CR>
+nnoremap <silent> ]B :blast<CR>
+" Mute search highlighting w/ CTRL-l
+nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
+" tip 42 of Practical Vim - expands active file directory into command mode
+cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
-" NERDTree
-" nmap <leader>t :NERDTreeToggle<CR>
-" let NERDTreeHighlightCursorline=1
+" Fuzzy Finding (fzf) stuff
+let mapleader = ","
+nmap <Leader>; :buffers<CR>
+nmap <Leader>t :files<CR>
+nmap <Leader>r :tags<CR>
 
-" Start NERDTree automagically
-" autocmd vimenter * NERDTree
-
-" START: NERDCommenter Stuff
-
-" Add spaces after comment delimiters by default
-" let g:NERDSpaceDelims = 1
-
-" Use compact syntax for prettified multi-line comments
-" let g:NERDCompactSexyComs = 1
-
-" Align line-wise comment delimiters flush left instead of following code indentation
-" let g:NERDDefaultAlign = 'left'
-
-" Set a language to use its alternate delimiters by default
-" let g:NERDAltDelims_java = 1
-
-" Add your own custom formats or override the defaults
-" let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
-
-" Allow commenting and inverting empty lines (useful when commenting a region)
-let g:NERDCommentEmptyLines = 1
-
-" Enable trimming of trailing whitespace when uncommenting
-let g:NERDTrimTrailingWhitespace = 1
-
-" END: NERDCommenter Stuff
-
-" tcomment
-map <leader>kc <c-_><c-_>
-
-" Format entire file
-nmap <leader>fef ggVG=
-
-" Open new buffers
-nmap <leader>s<left>  :leftabove  vnew<cr>
-nmap <leader>s<right> :rightabove vnew<cr>
-nmap <leader>s<up>    :leftabove  new<cr>
-nmap <leader>s<down>  :rightbelow new<cr>
-
+" https://twitter.com/vimrclines/status/933244408568467456
+" Preserve visual selection when indenting and outdenting
+vnoremap > >gv
+vnoremap < <gv
