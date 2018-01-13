@@ -4,4 +4,5 @@ tap 'homebrew/bundle'
 
 brew 'gcc'
 brew 'git'
+brew 'keychain'
 brew 'python'
