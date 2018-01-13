@@ -1,0 +1,2 @@
+alias t="todo.sh"
+alias tls="clear; todo.sh ls"
