@@ -51,15 +51,15 @@ export DEFAULT='\\033[0m'
 # Priorities can be any upper-case letter.
 # A,B,C are highlighted; you can add coloring for more.
 #
-export PRI_A=$YELLOW        # color for A priority
-export PRI_B=$LIGHT_GREEN   # define your own
-export PRI_C=$LIGHT_BLUE    # color for C priority
-export PRI_D=$LIGHT_CYAN    # define your own
-export PRI_E=$GREEN         # color for B priority
-export PRI_W=$PURPLE  # define your own
-export PRI_V=$RED     # define your own
-export PRI_X=$DARK_GREY     # define your own
-export PRI_Z=$BROWN    # color unless explicitly defined
+export PRI_A=$YELLOW
+export PRI_B=$LIGHT_GREEN
+export PRI_C=$LIGHT_BLUE
+export PRI_D=$LIGHT_CYAN
+export PRI_I=$GREEN           # icebox
+export PRI_R=$PURPLE          # retro items
+export PRI_V=$RED
+export PRI_X=$DARK_GREY
+export PRI_Z=$BROWN
 
 # There is highlighting for tasks that have been done,
 # but haven't been archived yet.
