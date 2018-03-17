@@ -53,9 +53,9 @@ export DEFAULT='\\033[0m'
 #
 export PRI_A=$YELLOW
 export PRI_B=$LIGHT_GREEN
-export PRI_C=$LIGHT_BLUE
+export PRI_C=$GREEN           
 export PRI_D=$LIGHT_CYAN
-export PRI_I=$GREEN           # icebox
+export PRI_I=$LIGHT_BLUE      # icebox
 export PRI_R=$PURPLE          # retro items
 export PRI_V=$RED
 export PRI_X=$DARK_GREY
