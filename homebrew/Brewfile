@@ -7,3 +7,7 @@ brew 'git'
 brew 'keychain'
 brew 'python'
 brew 'todo-txt'
+
+cask 'dropbox'
+cask 'google-chrome'
+cask 'visual-studio-code'
