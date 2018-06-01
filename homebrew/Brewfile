@@ -13,6 +13,7 @@ brew 'todo-txt'
 
 cask 'dropbox'
 cask 'google-chrome'
+cask 'hammerspoon'
 cask 'iterm2'
 cask 'keybase'
 cask 'visual-studio-code'
