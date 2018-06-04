@@ -1,6 +1,8 @@
 hs.hotkey.bind({"cmd", "alt", "ctrl"}, "W", function()
     local win = hs.window.focusedWindow()
-    hs.notify.new({title="Hammerspoon", informativeText="Hello World, from " .. win:application():name() .. ": " .. win:title() .. " in screen " .. win:screen():name()}):send()
+    local information = win:application():name() .. ": " .. win:title() .. " in screen " .. "(" .. win:screen():id() .. ") " .. win:screen():name()
+    hs.pasteboard.setContents(information)
+    hs.notify.new({title="App/Screen Information", informativeText=information}):send()
 end)
 
 hs.hotkey.bind({"cmd", "alt", "ctrl"}, "K", function()
