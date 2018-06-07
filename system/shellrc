@@ -20,3 +20,5 @@ do
     source $src
 done
 
+export VIMCONFIG=~/.vim
+export VIMDATA=~/.vim
