@@ -1,3 +1,10 @@
+hs.loadSpoon("ManageLayouts")
+spoon.ManageLayouts:bindHotkeys(
+    {
+        info={{"cmd", "alt", "ctrl"}, "I"}
+    }
+)
+
 hs.hotkey.bind({"cmd", "alt", "ctrl"}, "W", function()
     local win = hs.window.focusedWindow()
     local information = win:application():name() .. ": " .. win:title() .. " in screen " .. "(" .. win:screen():id() .. ") " .. win:screen():name()
