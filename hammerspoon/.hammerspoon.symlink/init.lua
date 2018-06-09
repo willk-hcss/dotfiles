@@ -4,6 +4,7 @@ spoon.ManageLayouts:bindHotkeys(
         info={{"cmd", "alt", "ctrl"}, "I"}
     }
 )
+spoon.ManageLayouts:start()
 
 hs.hotkey.bind({"cmd", "alt", "ctrl"}, "W", function()
     local win = hs.window.focusedWindow()
