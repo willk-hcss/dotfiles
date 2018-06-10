@@ -11,11 +11,12 @@ obj.license = "MIT - https://opensource.org/licenses/MIT"
 -- local variables
 local screenWatcher = nil
 local laptopScreen = "Color LCD"
-local homeScreen = "LG ULTRAWIDE"
+local screenOne = nil
+local screenTwo = nil
 
 local twoMonitorTeeLayout = {
-    {"Google Chrome", nil, homeScreen, hs.layout.left50, nil, nil},
-    {"iTerm2", nil, homeScreen, hs.layout.right50, nil, nil}
+    {"Google Chrome", nil, screenOne, hs.layout.left50, nil, nil},
+    {"iTerm2", nil, screenOne, hs.layout.right50, nil, nil}
 }
 
 local oneMonitorLayout = {
@@ -40,9 +41,13 @@ local function onScreensChanged()
     local screens = hs.screen.allScreens()
     local screenCount = #screens
 
+    screenOne = nil
+    screenTwo = nil
+
     if screenCount == 1 then
         hs.layout.apply(oneMonitorLayout)
     elseif screenCount == 2 then
+        screenOne = hs.screen.mainScreen():toNorth()
         hs.layout.apply(twoMonitorTeeLayout)
     end
 end
