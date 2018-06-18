@@ -21,8 +21,3 @@ fi
 if [ -f /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then
     source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 fi
-
-
-# https://superuser.com/questions/403355/how-do-i-get-searching-through-my-command-history-working-with-tmux-and-zshell
-export EDITOR=vi
-bindkey -e
