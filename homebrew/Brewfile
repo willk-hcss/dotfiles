@@ -11,6 +11,7 @@ brew 'nodejs'
 brew 'python'
 brew 'tmux'
 brew 'todo-txt'
+brew 'vim'
 
 cask 'dropbox'
 cask 'google-chrome'

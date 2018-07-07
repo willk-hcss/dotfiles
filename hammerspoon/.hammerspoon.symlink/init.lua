@@ -13,39 +13,39 @@ hs.hotkey.bind({"cmd", "alt", "ctrl"}, "W", function()
     hs.notify.new({title="App/Screen Information", informativeText=information}):send()
 end)
 
-hs.hotkey.bind({"cmd", "alt", "ctrl"}, "K", function()
+hs.hotkey.bind({"cmd", "alt"}, "K", function()
   local win = hs.window.focusedWindow()
   local f = win:frame()
 
-  f.y = f.y - 10
+  f.y = f.y - f.h
+  win:setFrame(f)
+end)
+
+hs.hotkey.bind({"cmd", "alt"}, "H", function()
+  local win = hs.window.focusedWindow()
+  local f = win:frame()
+
+  f.x = f.x - f.w
+  win:setFrame(f)
+end)
+
+hs.hotkey.bind({"cmd", "alt"}, "L", function()
+  local win = hs.window.focusedWindow()
+  local f = win:frame()
+
+  f.x = f.x + f.w
+  win:setFrame(f)
+end)
+
+hs.hotkey.bind({"cmd", "alt"}, "J", function()
+  local win = hs.window.focusedWindow()
+  local f = win:frame()
+
+  f.y = f.y + f.h
   win:setFrame(f)
 end)
 
 hs.hotkey.bind({"cmd", "alt", "ctrl"}, "H", function()
-  local win = hs.window.focusedWindow()
-  local f = win:frame()
-
-  f.x = f.x - 10
-  win:setFrame(f)
-end)
-
-hs.hotkey.bind({"cmd", "alt", "ctrl"}, "L", function()
-  local win = hs.window.focusedWindow()
-  local f = win:frame()
-
-  f.x = f.x + 10
-  win:setFrame(f)
-end)
-
-hs.hotkey.bind({"cmd", "alt", "ctrl"}, "J", function()
-  local win = hs.window.focusedWindow()
-  local f = win:frame()
-
-  f.y = f.y + 10
-  win:setFrame(f)
-end)
-
-hs.hotkey.bind({"cmd", "alt", "ctrl"}, "Left", function()
 	local win = hs.window.focusedWindow()
     local f = win:frame()
     local screen = win:screen()
@@ -59,7 +59,7 @@ hs.hotkey.bind({"cmd", "alt", "ctrl"}, "Left", function()
     win:setFrame(f)
 end)
 
-hs.hotkey.bind({"cmd", "alt", "ctrl"}, "Right", function()
+hs.hotkey.bind({"cmd", "alt", "ctrl"}, "L", function()
 	local win = hs.window.focusedWindow()
     local f = win:frame()
     local screen = win:screen()
@@ -73,7 +73,7 @@ hs.hotkey.bind({"cmd", "alt", "ctrl"}, "Right", function()
     win:setFrame(f)
 end)
 
-hs.hotkey.bind({"cmd", "alt", "ctrl"}, "Up", function()
+hs.hotkey.bind({"cmd", "alt", "ctrl"}, "K", function()
 	local win = hs.window.focusedWindow()
     local f = win:frame()
     local screen = win:screen()
