@@ -2,6 +2,7 @@ cask_args appdir: '/Applications'
 
 tap 'homebrew/bundle'
 
+brew 'cmake'
 brew 'gcc'
 brew 'git'
 brew 'heroku'
