@@ -1,7 +1,9 @@
 cask_args appdir: '/Applications'
 
 tap 'homebrew/bundle'
+tap 'azure/functions'
 
+brew 'azure-functions-core-tools'
 brew 'gcc'
 brew 'git'
 brew 'heroku'
