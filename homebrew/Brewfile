@@ -15,6 +15,7 @@ brew 'todo-txt'
 brew 'vim'
 
 cask 'alfred'
+cask 'anki'
 cask 'dropbox'
 cask 'google-chrome'
 cask 'hammerspoon'
