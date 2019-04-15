@@ -17,6 +17,7 @@ brew 'vim'
 
 cask 'alfred'
 cask 'anki'
+cask 'docker'
 cask 'dropbox'
 cask 'google-chrome'
 cask 'hammerspoon'
