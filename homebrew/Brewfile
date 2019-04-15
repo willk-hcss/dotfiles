@@ -15,14 +15,6 @@ brew 'tmux'
 brew 'todo-txt'
 brew 'vim'
 
-# Docker container setup, described here: https://pilsniak.com/how-to-install-docker-on-mac-os-using-brew/
-brew 'docker'
-brew 'docker-compose'
-brew 'docker-machine'
-brew 'xhyve'
-brew 'docker-machine-driver-xhyve'
-# End docker container setup
-
 cask 'alfred'
 cask 'anki'
 cask 'dropbox'
