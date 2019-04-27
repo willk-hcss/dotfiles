@@ -53,9 +53,11 @@ local function onScreensChanged()
 end
 
 function obj:start()
+    --[[
     screenWatcher = hs.screen.watcher.new(onScreensChanged)
     screenWatcher:start()
     print("ManageLayouts.spoon Started")
+    ]]
 end
 
 function obj:stop()
