@@ -15,3 +15,7 @@
 * Run Signal
 * Run Parallels
 * Run Scroll Reverser
+* Customize keyboard for switching left and right through mission control desktops
+* Customize Mission Control NOT to prioritize desktops based on use
+* Notifications - disable sounds for iTerm
+* Open Anki app, log in and sync to cloud account
