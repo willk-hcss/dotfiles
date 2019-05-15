@@ -13,3 +13,5 @@
     * Get .localrc
 * Switch dotfiles repo from https remote to ssh remote
 * Run Signal
+* Run Parallels
+* Run Scroll Reverser
