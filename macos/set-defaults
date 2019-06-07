@@ -115,6 +115,9 @@ set_macos_preferences() {
         success "Set to show the Library folder"
         chflags nohidden ~/Library
 
+        success "Set to show the Volumes folder"
+        sudo chflags nohidden /Volumes
+
         success "Preventing Photos from opening every time a device is plugged in"
         defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 
