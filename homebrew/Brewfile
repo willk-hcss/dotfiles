@@ -4,6 +4,7 @@ tap 'homebrew/bundle'
 tap 'azure/functions'
 tap 'heroku/brew'
 
+brew 'azure-cli'
 brew 'azure-functions-core-tools'
 brew 'cmake'
 brew 'dos2unix'
