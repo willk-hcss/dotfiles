@@ -42,6 +42,11 @@ export LIGHT_CYAN='\\033[1;36m'
 export WHITE='\\033[1;37m'
 export DEFAULT='\\033[0m'
 
+## I found this info on getting real RGB colors
+## https://stackoverflow.com/questions/4842424/list-of-ansi-color-escape-sequences
+## \033[38;2;<r>;<g>;<b>m     #Select RGB foreground color
+## \033[48;2;<r>;<g>;<b>m     #Select RGB background color
+
 # === COLORS ===
 
 ## Uncomment and edit to override these defaults.
