@@ -42,6 +42,38 @@ export LIGHT_CYAN='\\033[1;36m'
 export WHITE='\\033[1;37m'
 export DEFAULT='\\033[0m'
 
+## I found this info on getting real RGB colors
+## https://stackoverflow.com/questions/4842424/list-of-ansi-color-escape-sequences
+## \033[38;2;<r>;<g>;<b>m     #Select RGB foreground color
+## \033[48;2;<r>;<g>;<b>m     #Select RGB background color
+
+export COLOR_A='\\033[38;2;255;255;0m'
+export COLOR_B='\\033[38;2;255;191;0m'
+export COLOR_C='\\033[38;2;255;127;0m'
+export COLOR_D='\\033[38;2;255;63;0m'
+export COLOR_E='\\033[38;2;255;0;0m'
+export COLOR_F='\\033[38;2;255;0;63m'
+export COLOR_G='\\033[38;2;255;0;127m'
+export COLOR_H='\\033[38;2;255;0;191m'
+export COLOR_I='\\033[38;2;255;0;255m'
+export COLOR_J='\\033[38;2;191;0;255m'
+export COLOR_K='\\033[38;2;127;0;255m'
+export COLOR_L='\\033[38;2;63;0;255m'
+export COLOR_M='\\033[38;2;0;0;255m'
+export COLOR_N='\\033[38;2;0;63;255m'
+export COLOR_O='\\033[38;2;0;127;255m'
+export COLOR_P='\\033[38;2;0;191;255m'
+export COLOR_Q='\\033[38;2;0;255;255m'
+export COLOR_R='\\033[38;2;0;255;191m'
+export COLOR_S='\\033[38;2;0;255;127m'
+export COLOR_T='\\033[38;2;0;255;63m'
+export COLOR_U='\\033[38;2;0;255;0m'
+export COLOR_V='\\033[38;2;63;255;0m'
+export COLOR_W='\\033[38;2;127;255;0m'
+export COLOR_X='\\033[38;2;191;255;0m'
+export COLOR_Y='\\033[38;2;255;255;0m'
+export COLOR_Z='\\033[38;2;191;127;63m'
+
 # === COLORS ===
 
 ## Uncomment and edit to override these defaults.
@@ -51,19 +83,34 @@ export DEFAULT='\\033[0m'
 # Priorities can be any upper-case letter.
 # A,B,C are highlighted; you can add coloring for more.
 #
-export PRI_A=$YELLOW
-export PRI_B=$LIGHT_GREEN
-export PRI_C=$GREEN           
-export PRI_D=$BLUE
-export PRI_E=$LIGHT_BLUE
-export PRI_F=$CYAN
-export PRI_G=$LIGHT_RED
-export PRI_H=$LIGHT_CYAN
-export PRI_I=$LIGHT_BLUE      # icebox
-export PRI_R=$PURPLE          # retro items
-export PRI_V=$RED
-export PRI_X=$DARK_GREY
-export PRI_Z=$BROWN
+export PRI_A=$COLOR_A
+export PRI_B=$COLOR_B
+export PRI_C=$COLOR_C
+export PRI_D=$COLOR_D
+export PRI_E=$COLOR_E
+export PRI_F=$COLOR_F
+export PRI_G=$COLOR_G
+export PRI_H=$COLOR_H
+export PRI_I=$COLOR_I
+export PRI_J=$COLOR_J
+export PRI_K=$COLOR_K
+export PRI_L=$COLOR_L
+export PRI_M=$COLOR_M
+export PRI_N=$COLOR_N
+export PRI_O=$COLOR_O
+export PRI_P=$COLOR_P
+export PRI_Q=$COLOR_Q
+export PRI_R=$COLOR_R
+export PRI_S=$COLOR_S
+export PRI_T=$COLOR_T
+export PRI_U=$COLOR_U
+export PRI_V=$COLOR_V
+export PRI_W=$COLOR_W
+export PRI_X=$COLOR_X
+export PRI_Y=$COLOR_Y
+
+
+export PRI_Z=$COLOR_Z
 
 # There is highlighting for tasks that have been done,
 # but haven't been archived yet.
