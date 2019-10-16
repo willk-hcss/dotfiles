@@ -2,8 +2,11 @@ cask_args appdir: '/Applications'
 
 tap 'homebrew/bundle'
 
+brew 'adr-tools'
 brew 'gcc'
 brew 'git'
+brew 'fzf'
 brew 'keychain'
 brew 'python'
 brew 'todo-txt'
+brew 'z'
