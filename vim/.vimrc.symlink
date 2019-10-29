@@ -82,3 +82,6 @@ nmap <Leader>r :tags<CR>
 " Preserve visual selection when indenting and outdenting
 vnoremap > >gv
 vnoremap < <gv
+
+" FZF mappings
+nnoremap <C-p> :<C-u>FZF<CR>
