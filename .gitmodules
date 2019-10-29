@@ -2,3 +2,6 @@
 	path = vim/.vim.symlink/pack/bundle/start/YouCompleteMe
 	url = git@github.com:Valloric/YouCompleteMe.git
 	branch = master
+[submodule "vim/.vim.symlink/pack/bundle/start/fzf"]
+	path = vim/.vim.symlink/pack/bundle/start/fzf
+	url = https://github.com/junegunn/fzf.vim.git
