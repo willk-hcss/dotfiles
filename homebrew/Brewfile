@@ -19,6 +19,7 @@ brew 'tmux'
 brew 'todo-txt'
 brew 'vim'
 
+cask 'adoptopenjdk8'
 cask 'alfred'
 cask 'anki'
 cask 'azure-data-studio'
