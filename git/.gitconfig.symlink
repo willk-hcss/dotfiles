@@ -84,4 +84,4 @@
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 [core]
-	autocrlf = true
+	autocrlf = input
