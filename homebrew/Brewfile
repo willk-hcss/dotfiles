@@ -19,6 +19,7 @@ brew 'python'
 brew 'tmux'
 brew 'todo-txt'
 brew 'vim'
+brew 'z'
 
 cask 'adoptopenjdk8'
 cask 'alfred'

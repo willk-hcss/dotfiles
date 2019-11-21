@@ -242,6 +242,10 @@
             }
           }
         }
+      },
+      "z": {
+        "version": "1.9",
+        "bottle": false
       }
     },
     "cask": {
@@ -404,7 +408,7 @@
       "mojave": {
         "HOMEBREW_VERSION": "2.1.16",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "fcb6da4342bb5897a311de0a3abf1fac47878346",
+        "Homebrew/homebrew-core": "314c3beb6e2b4059ce5524304bcef508ddb9b30b",
         "CLT": "10.3.0.0.1.1562985497",
         "Xcode": "10.2.1",
         "macOS": "10.14.6"
