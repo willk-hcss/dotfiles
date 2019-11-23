@@ -13,6 +13,8 @@ filetype plugin indent on    " required
 " Automatically reload .vimrc when changing
 autocmd! bufwritepost .vimrc source %
 
+autocmd Filetype markdown setlocal ts=2 sw=2 expandtab
+
 "/*[ Settings ]*******************************************************************/
 
 " Set syntax highlighting on
