@@ -17,6 +17,7 @@ brew 'python'
 brew 'tmux'
 brew 'todo-txt'
 brew 'vim'
+brew 'z'
 
 cask 'alfred'
 cask 'anki'
