@@ -4,6 +4,7 @@ tap 'homebrew/bundle'
 tap 'heroku/brew'
 
 brew 'azure-cli'
+brew 'bat'
 brew 'cmake'
 brew 'dos2unix'
 brew 'fd'
