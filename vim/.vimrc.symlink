@@ -91,6 +91,9 @@ nnoremap <C-p> :<C-u>FZF<CR>
 "/*[ EasyMotion ]*****************************************************************/
 let g:EasyMotion_do_mapping = 0 " disable default <Leader><Leader> mappings
 
+" only use easy-to-use and recognize keys
+let g:EasyMotion_keys='asdghkqwertyuopzxcvbnmfj'
+
 " `s{char}{char}{label}`
 " Need one more keystroke, but on average, it may be more comfortable.
 nmap s <Plug>(easymotion-overwin-f2)
