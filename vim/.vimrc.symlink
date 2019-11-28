@@ -62,6 +62,9 @@ set formatoptions=qroct
 " case insensitive searches
 :set ignorecase
 
+" Make easymotion case insensitive
+let g:EasyMotion_smartcase = 1
+
 ":filetype plugin on
 ":helptags ~/.vim/doc
 
