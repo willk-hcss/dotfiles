@@ -1,6 +1,6 @@
-[submodule "vim/.vim.symlink/pack/bundle/start/fzf.vim"]
-	path = vim/.vim.symlink/pack/bundle/start/fzf.vim
-	url = https://github.com/junegunn/fzf.vim.git
+[submodule "vim/.vim.symlink/pack/bundle/start/fzf"]
+	path = vim/.vim.symlink/pack/bundle/start/fzf
+	url = https://github.com/junegunn/fzf.git
 [submodule "vim/.vim.symlink/pack/bundle/start/vim-easymotion"]
 	path = vim/.vim.symlink/pack/bundle/start/vim-easymotion
 	url = https://github.com/easymotion/vim-easymotion.git
