@@ -6,4 +6,7 @@
 	url = https://github.com/junegunn/fzf.git
 [submodule "vim/.vim.symlink/pack/bundle/start/vim-easymotion"]
 	path = vim/.vim.symlink/pack/bundle/start/vim-easymotion
-	url = git@github.com:easymotion/vim-easymotion.git
+	url = https://github.com/easymotion/vim-easymotion.git
+[submodule "vim/.vim.symlink/pack/bundle/start/vim-gitgutter"]
+	path = vim/.vim.symlink/pack/bundle/start/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
