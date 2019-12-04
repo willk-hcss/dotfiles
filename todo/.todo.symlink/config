@@ -85,12 +85,12 @@ export COLOR_Z='\\033[38;2;191;127;63m'
 #
 export PRI_A=$COLOR_A
 export PRI_B=$COLOR_B
-export PRI_C=$COLOR_C           
+export PRI_C=$COLOR_C
 export PRI_D=$COLOR_D
 export PRI_E=$COLOR_E
 export PRI_F=$COLOR_F
 export PRI_G=$COLOR_G
-export PRI_H=$COLOR_H   
+export PRI_H=$COLOR_H
 export PRI_I=$COLOR_I
 export PRI_J=$COLOR_J
 export PRI_K=$COLOR_K
