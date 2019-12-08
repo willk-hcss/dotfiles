@@ -130,3 +130,6 @@ export PRI_Z=$COLOR_Z
 # just before the list output is displayed.
 #
 # export TODOTXT_FINAL_FILTER='cat'
+
+export COLOR_PROJECT=$WHITE
+export COLOR_CONTEXT=$LIGHT_GREY
