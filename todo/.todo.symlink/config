@@ -108,8 +108,6 @@ export PRI_V=$COLOR_V
 export PRI_W=$COLOR_W
 export PRI_X=$COLOR_X
 export PRI_Y=$COLOR_Y
-
-
 export PRI_Z=$COLOR_Z
 
 # There is highlighting for tasks that have been done,
@@ -132,3 +130,6 @@ export PRI_Z=$COLOR_Z
 # just before the list output is displayed.
 #
 # export TODOTXT_FINAL_FILTER='cat'
+
+export COLOR_PROJECT=$WHITE
+export COLOR_CONTEXT=$LIGHT_GREY
