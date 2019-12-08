@@ -3,6 +3,7 @@ cask_args appdir: '/Applications'
 tap 'homebrew/bundle'
 
 brew 'adr-tools'
+brew 'base16-manager'
 brew 'bat'
 brew 'exa'
 brew 'fd'

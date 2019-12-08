@@ -6,9 +6,7 @@
       },
       "heroku/brew": {
         "revision": "20980ed084f3633d6314ec2beb677dd5a2ff4218"
-      },
-      "homebrew/bundle": {
-        "revision": "1a41629972a351085d297e2c336f8eda0dc771eb"
+      }
       }
     },
     "brew": {
@@ -309,6 +307,10 @@
             }
           }
         }
+      },
+      "base16-manager": {
+        "version": "1.2.1",
+        "bottle": false
       }
     },
     "cask": {
@@ -479,7 +481,7 @@
       "mojave": {
         "HOMEBREW_VERSION": "2.2.0",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "70ee7daeb9b6c8c82eee6edb2204a88f9b174820",
+        "Homebrew/homebrew-core": "5b9bd0e888f045285a0c2b538f8d39d3e2610df5",
         "CLT": "10.3.0.0.1.1562985497",
         "Xcode": "10.2.1",
         "macOS": "10.14.6"
