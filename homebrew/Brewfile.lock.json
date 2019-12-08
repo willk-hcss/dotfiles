@@ -2,7 +2,7 @@
   "entries": {
     "tap": {
       "homebrew/bundle": {
-        "revision": "914c6634a0d9cb5fb30235a5d79739ce2302d711"
+        "revision": "cf856030d1d823bbfe8c6c26074745a7d89f13d7"
       },
       "heroku/brew": {
         "revision": "20980ed084f3633d6314ec2beb677dd5a2ff4218"
@@ -471,7 +471,7 @@
       "mojave": {
         "HOMEBREW_VERSION": "2.2.0",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "5b9bd0e888f045285a0c2b538f8d39d3e2610df5",
+        "Homebrew/homebrew-core": "24b77cddf8946d9f25114d29f8f447e06787c2c6",
         "CLT": "10.3.0.0.1.1562985497",
         "Xcode": "10.2.1",
         "macOS": "10.14.6"
