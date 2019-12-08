@@ -1,9 +1,11 @@
 cask_args appdir: '/Applications'
 
-tap 'homebrew/bundle'
+tap 'chrokh/tap'
 tap 'heroku/brew'
+tap 'homebrew/bundle'
 
 brew 'azure-cli'
+brew 'base16-manager'
 brew 'bat'
 brew 'cmake'
 brew 'dos2unix'
