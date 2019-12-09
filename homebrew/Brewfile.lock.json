@@ -484,6 +484,14 @@
             "appdir": "/Applications"
           }
         }
+      },
+      "vlc": {
+        "version": "3.0.8",
+        "options": {
+          "args": {
+            "appdir": "/Applications"
+          }
+        }
       }
     }
   },
