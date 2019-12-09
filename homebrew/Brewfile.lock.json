@@ -4,6 +4,9 @@
       "azure/functions": {
         "revision": "62bd5726ecd3b2476b344b054d27359e0e94a518"
       },
+      "chrokh/tap": {
+        "revision": "eae2061acb123985e9527600c123684ed5683bdc"
+      },
       "heroku/brew": {
         "revision": "20980ed084f3633d6314ec2beb677dd5a2ff4218"
       },
@@ -35,6 +38,10 @@
       },
       "azure-functions-core-tools": {
         "version": "2.7.1948",
+        "bottle": false
+      },
+      "base16-manager": {
+        "version": "1.2.1",
         "bottle": false
       },
       "bat": {
@@ -260,6 +267,27 @@
           }
         }
       },
+      "tig": {
+        "version": "2.5.0",
+        "bottle": {
+          "cellar": ":any",
+          "prefix": "/usr/local",
+          "files": {
+            "catalina": {
+              "url": "https://homebrew.bintray.com/bottles/tig-2.5.0.catalina.bottle.tar.gz",
+              "sha256": "03f5fc99e3763dc90dd4e2a3445fb9e4a65a2db790b8aa40c1d56cd08d1d5f6f"
+            },
+            "mojave": {
+              "url": "https://homebrew.bintray.com/bottles/tig-2.5.0.mojave.bottle.tar.gz",
+              "sha256": "5fbd4ddf058724d51f88221bb54f949dd79941d7654f63881c62bf9768a7e12e"
+            },
+            "high_sierra": {
+              "url": "https://homebrew.bintray.com/bottles/tig-2.5.0.high_sierra.bottle.tar.gz",
+              "sha256": "8c85a68d1ff0400649e18b47160152ea1220e72afa6217d916462ecc7053bf14"
+            }
+          }
+        }
+      },
       "tmux": {
         "version": "3.0a",
         "bottle": {
@@ -458,6 +486,14 @@
       },
       "visual-studio-code": {
         "version": "1.33.1,51b0b28134d51361cf996d2f0a1c698247aeabd8",
+        "options": {
+          "args": {
+            "appdir": "/Applications"
+          }
+        }
+      },
+      "vlc": {
+        "version": "3.0.8",
         "options": {
           "args": {
             "appdir": "/Applications"
