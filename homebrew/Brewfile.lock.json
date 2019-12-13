@@ -1,0 +1,112 @@
+{
+  "entries": {
+    "tap": {
+      "homebrew/bundle": {
+        "revision": "cf856030d1d823bbfe8c6c26074745a7d89f13d7"
+      }
+    },
+    "brew": {
+      "adr-tools": {
+        "version": "3.0.0",
+        "bottle": false
+      },
+      "gcc": {
+        "version": "5.5.0_7",
+        "bottle": {
+          "cellar": ":any",
+          "prefix": "/home/linuxbrew/.linuxbrew",
+          "files": {
+            "catalina": {
+              "url": "https://linuxbrew.bintray.com/bottles/gcc-5.5.0_7.catalina.bottle.tar.gz",
+              "sha256": "1564397f461f629f3811f1ececc7f2bb614f7520242743fc41348d190d8b6aa9"
+            },
+            "mojave": {
+              "url": "https://linuxbrew.bintray.com/bottles/gcc-5.5.0_7.mojave.bottle.tar.gz",
+              "sha256": "5012d43ce3ff9b31fc21f9df1075b9d5e205d1a727b75f6dbd098654aff0f0f2"
+            },
+            "high_sierra": {
+              "url": "https://linuxbrew.bintray.com/bottles/gcc-5.5.0_7.high_sierra.bottle.tar.gz",
+              "sha256": "cc0e6c6a7f7ce5823d0578cf57a6e201727238905aa8a4726e5f90dbc252d94b"
+            },
+            "x86_64_linux": {
+              "url": "https://linuxbrew.bintray.com/bottles/gcc-5.5.0_7.x86_64_linux.bottle.tar.gz",
+              "sha256": "8cae5e1f1e2074f46bfeda826313afb7b823879d190f27dbcd6b00fbfd8daedd"
+            }
+          }
+        }
+      },
+      "git": {
+        "version": "2.24.0_2",
+        "bottle": {
+          "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
+          "prefix": "/home/linuxbrew/.linuxbrew",
+          "files": {
+            "catalina": {
+              "url": "https://linuxbrew.bintray.com/bottles/git-2.24.0_2.catalina.bottle.tar.gz",
+              "sha256": "87100f6c01be17be5501be0ee5d674610e594ee0ae2d57ac3a2ebefec601e589"
+            },
+            "mojave": {
+              "url": "https://linuxbrew.bintray.com/bottles/git-2.24.0_2.mojave.bottle.tar.gz",
+              "sha256": "343c1a0b842b84095aa0632ea7ca3f1717103fe4f393a6014c7f6165b079c849"
+            },
+            "high_sierra": {
+              "url": "https://linuxbrew.bintray.com/bottles/git-2.24.0_2.high_sierra.bottle.tar.gz",
+              "sha256": "c4c40270f2acd82234660d8e1b3093294222fd8dc47687fc575815ed8544baf0"
+            },
+            "x86_64_linux": {
+              "url": "https://linuxbrew.bintray.com/bottles/git-2.24.0_2.x86_64_linux.bottle.tar.gz",
+              "sha256": "22a0d56daa12c1abb3df8076ee377976c2fceab9dbb325c711da0ec288ef246e"
+            }
+          }
+        }
+      },
+      "keychain": {
+        "version": "2.8.5",
+        "bottle": false
+      },
+      "python": {
+        "version": "3.7.5",
+        "bottle": {
+          "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
+          "prefix": "/home/linuxbrew/.linuxbrew",
+          "files": {
+            "catalina": {
+              "url": "https://linuxbrew.bintray.com/bottles/python-3.7.5.catalina.bottle.tar.gz",
+              "sha256": "623d2a1110674974c0ea3ff0498c1ac865b858ba5293bdc29f3ce4dbd421fd42"
+            },
+            "mojave": {
+              "url": "https://linuxbrew.bintray.com/bottles/python-3.7.5.mojave.bottle.tar.gz",
+              "sha256": "bcbdc3612a10d06facca7ec9499265731d530c8273b1a2dc28f16258d4410552"
+            },
+            "high_sierra": {
+              "url": "https://linuxbrew.bintray.com/bottles/python-3.7.5.high_sierra.bottle.tar.gz",
+              "sha256": "32e080b97e0075d2563c1f454e6925dbdd57ad683b857fc2a42e46a0a30959f6"
+            },
+            "x86_64_linux": {
+              "url": "https://linuxbrew.bintray.com/bottles/python-3.7.5.x86_64_linux.bottle.tar.gz",
+              "sha256": "4709a9a0c66456028dc3a3f7fa5d5ba254792321841533e3fdc7c934e5cf578d"
+            }
+          }
+        }
+      },
+      "todo-txt": {
+        "version": "2.11.0",
+        "bottle": false
+      },
+      "z": {
+        "version": "1.9",
+        "bottle": false
+      }
+    }
+  },
+  "system": {
+    "linux": {
+      "Ubuntu 18.04.3 LTS (bionic)": {
+        "HOMEBREW_VERSION": "2.2.1",
+        "HOMEBREW_PREFIX": "/home/linuxbrew/.linuxbrew",
+        "Homebrew/linuxbrew-core": "7b5337db79c9327a3d8b3d09241379daf483ce9e",
+        "GCC": "5.5.0"
+      }
+    }
+  }
+}
