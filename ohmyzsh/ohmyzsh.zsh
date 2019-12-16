@@ -6,7 +6,7 @@ export ZSH=~/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 #ZSH_THEME="bira"
-ZSH_THEME="bullet-train"
+#ZSH_THEME="bullet-train"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -50,7 +50,7 @@ ZSH_THEME="bullet-train"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git z virtualenv python pip debian osx brew zsh-nvm zsh-autosuggestions)
+plugins=(git z virtualenv pip osx brew)
 
 # User configuration
 # export MANPATH="/usr/local/man:$MANPATH"
