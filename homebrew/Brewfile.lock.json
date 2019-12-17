@@ -417,6 +417,10 @@
             }
           }
         }
+      },
+      "zsh-autosuggestions": {
+        "version": "0.6.3",
+        "bottle": false
       }
     },
     "cask": {
