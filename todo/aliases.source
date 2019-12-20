@@ -3,3 +3,5 @@ alias tls="clear; todo.sh ls"
 alias tlw="tls @work"
 alias tlh="tls @home"
 alias trep="tail -15 ~/Dropbox/todo/report.txt"
+
+function txfer() { cat ~/Dropbox/todo/vimdo.txt >> ~/Dropbox/todo/todo.txt;  echo "" > ~/Dropbox/todo/vimdo.txt }
