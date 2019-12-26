@@ -10,3 +10,9 @@
 [submodule "vim/.vim.symlink/pack/bundle/start/vim-gitgutter"]
 	path = vim/.vim.symlink/pack/bundle/start/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
+[submodule "vim/.vim.symlink/pack/bundle/start/vim-ripgrep"]
+	path = vim/.vim.symlink/pack/bundle/start/vim-ripgrep
+	url = https://github.com/jremmen/vim-ripgrep.git
+[submodule "vim/.vim.symlink/pack/bundle/start/quickfix-reflector.vim"]
+	path = vim/.vim.symlink/pack/bundle/start/quickfix-reflector.vim
+	url = https://github.com/stefandtw/quickfix-reflector.vim.git
