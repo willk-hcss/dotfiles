@@ -12,4 +12,3 @@
 * VIm: Transition over to neovim
 * VIm: Linting
 * VIm: `lightline` status bar?
-* VIm: `EasyMotion` inside of sentences.  I.e. `df<char>`, the f should use EasyMotion rather than just the default find behavior.
