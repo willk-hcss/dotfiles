@@ -81,7 +81,7 @@ nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
 " Fuzzy Finding (fzf) stuff
-let mapleader = ","
+let mapleader = " "
 nmap <Leader>; :buffers<CR>
 nmap <Leader>t :files<CR>
 nmap <Leader>r :tags<CR>
@@ -92,4 +92,4 @@ vnoremap > >gv
 vnoremap < <gv
 
 " FZF mappings
-nnoremap <C-p> :<C-u>FZF<CR>
+nnoremap <Leader>s :<C-u>FZF<CR>
