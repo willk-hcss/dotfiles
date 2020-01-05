@@ -10,6 +10,10 @@ if [ -f $DOTHOME/system/shellrc ]; then
    source $DOTHOME/system/shellrc
 fi
 
+if [ -d $DOTHOME/zsh/plugins/fzf-tab ]; then
+    source $DOTHOME/zsh/plugins/fzf-tab/fzf-tab.zsh
+fi
+
 # Load the Homebrew-installed ZSH completions
 # https://github.com/zsh-users/zsh-completions
 if [ -d /usr/local/share/zsh-completions ]; then
