@@ -4,6 +4,7 @@ tap 'azure/functions'
 tap 'chrokh/tap'
 tap 'heroku/brew'
 tap 'homebrew/bundle'
+tap 'azure/functions'
 
 brew 'azure-cli'
 brew 'azure-functions-core-tools'
