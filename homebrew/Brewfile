@@ -34,6 +34,7 @@ brew 'zsh-syntax-highlighting'
 
 cask 'alfred'
 cask 'anki'
+cask 'authy'
 cask 'azure-data-studio'
 cask 'bitwarden'
 cask 'docker'
