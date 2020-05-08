@@ -16,3 +16,18 @@
 [submodule "vim/.vim.symlink/pack/bundle/start/quickfix-reflector.vim"]
 	path = vim/.vim.symlink/pack/bundle/start/quickfix-reflector.vim
 	url = https://github.com/stefandtw/quickfix-reflector.vim.git
+[submodule "zsh/plugins/fzf-tab"]
+	path = zsh/plugins/fzf-tab
+	url = https://github.com/Aloxaf/fzf-tab.git
+[submodule "vim/.vim.symlink/pack/bundle/start/any-jump.vim"]
+	path = vim/.vim.symlink/pack/bundle/start/any-jump.vim
+	url = https://github.com/pechorin/any-jump.vim
+[submodule "vim/.vim.symlink/pack/bundle/start/omnisharp-vim"]
+	path = vim/.vim.symlink/pack/bundle/start/omnisharp-vim
+	url = git://github.com/OmniSharp/omnisharp-vim
+[submodule "vim/.vim.symlink/plugin/vim-surround"]
+	path = vim/.vim.symlink/plugin/vim-surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule "vim/.vim.symlink/plugin/vim-sort-motion"]
+	path = vim/.vim.symlink/plugin/vim-sort-motion
+	url = https://github.com/christoomey/vim-sort-motion.git
