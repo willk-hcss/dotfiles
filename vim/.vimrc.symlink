@@ -61,11 +61,9 @@ set formatoptions=qroct
 " case insensitive searches
 :set ignorecase
 
-" Enable true colors for vim
-set termguicolors
-
-" Anderson color scheme https://github.com/sainnhe/gruvbox-material
-colorscheme gruvbox-material
+" VIm popup menu coloring
+hi Pmenu ctermbg=black
+hi Pmenu ctermfg=green
 
 ":filetype plugin on
 ":helptags ~/.vim/doc
