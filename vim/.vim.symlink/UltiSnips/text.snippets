@@ -1,0 +1,34 @@
+global !p
+# Autocomplete function.  Learn how @ https://www.youtube.com/watch?v=JJQYwt6Diro
+def complete(t, opts):
+	if t:
+		opts = [ m[len(t):] for m in opts if m.startswith(t) ]
+	if len(opts) == 1:
+		return opts[0]
+	return "(" + '|'.join(opts) + ')'
+endglobal
+
+snippet sin "Snippet for inserting a Timeless Pavel Simple/Sinister practice session todo"
+(W) wod: Pavel Timeless Simple ${1:LR} ${2:2} @ ${3:35}#${4:, ${5:8} @ ${6:53}#};${0}
+endsnippet
+
+snippet sint "Snippet for inserting a Timed Pavel Simple/Sinister practice session todo"
+(W) wod: Pavel Timed Simple ${1:LR} ${2:10} @ ${3:35}#${4:, ${5:0} @ ${6:53}#};${0}
+endsnippet
+
+snippet sinc "Snippet for inserting a comples Timeless Pavel Simple/Sinister practice session todo"
+(W) wod: Pavel Timeless Simple ${1:LR} {swings: ${2:2} @ ${3:35}#${4:, ${5:8} @ ${6:53}#}} {getups: ${7:2} @ ${8:35}#${9:, ${10:8} @ ${11:53}#}};${0}
+endsnippet
+
+# https://www.strongfirst.com/plans-for-building-powerful-pushups/
+snippet sfpm "SF Elite Instructor Jody Beasly Powerful Pushup Program: Finding Max"
+(W) wod: StrongFirst ${1:Explosive }Pu$2`!p snip.rv=complete(t[2], ['sh', 'll'])`up Max: ${3:22}${0}
+endsnippet
+
+snippet sfps "Strong First Push/Pull Session" b
+(W) wod: StrongFirst ${1:Explosive }Pu$2`!p snip.rv=complete(t[2], ['sh', 'll'])`up Practice Session: (day ${3:1} of 3) - ${4:3} sets of ${5:14}${0}
+endsnippet
+
+snippet golften "Log a session of exercises for golfer/tennis elbow"
+(W) wod: Golfer/Tennis Elbow Exercises ${1:LR}
+endsnippet

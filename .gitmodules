@@ -16,6 +16,39 @@
 [submodule "vim/.vim.symlink/pack/bundle/start/quickfix-reflector.vim"]
 	path = vim/.vim.symlink/pack/bundle/start/quickfix-reflector.vim
 	url = https://github.com/stefandtw/quickfix-reflector.vim.git
-[submodule "zsh/plugins/fzf-tab"]
-	path = zsh/plugins/fzf-tab
-	url = https://github.com/Aloxaf/fzf-tab.git
+[submodule "vim/.vim.symlink/pack/bundle/start/any-jump.vim"]
+	path = vim/.vim.symlink/pack/bundle/start/any-jump.vim
+	url = https://github.com/pechorin/any-jump.vim
+[submodule "vim/.vim.symlink/pack/bundle/start/omnisharp-vim"]
+	path = vim/.vim.symlink/pack/bundle/start/omnisharp-vim
+	url = git://github.com/OmniSharp/omnisharp-vim
+[submodule "vim/.vim.symlink/plugin/vim-surround"]
+	path = vim/.vim.symlink/plugin/vim-surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule "vim/.vim.symlink/plugin/vim-sort-motion"]
+	path = vim/.vim.symlink/plugin/vim-sort-motion
+	url = https://github.com/christoomey/vim-sort-motion.git
+[submodule "vim/.vim.symlink/plugin/ReplaceWithRegister"]
+	path = vim/.vim.symlink/plugin/ReplaceWithRegister
+	url = https://github.com/vim-scripts/ReplaceWithRegister.git
+[submodule "vim/.vim.symlink/plugin/vim-commentary"]
+	path = vim/.vim.symlink/plugin/vim-commentary
+	url = https://github.com/tpope/vim-commentary.git
+[submodule "vim/.vim.symlink/pack/bundle/start/ultisnips"]
+	path = vim/.vim.symlink/pack/bundle/start/ultisnips
+	url = https://github.com/SirVer/ultisnips.git
+[submodule "vim/.vim.symlink/pack/bundle/start/vim-snippets"]
+	path = vim/.vim.symlink/pack/bundle/start/vim-snippets
+	url = https://github.com/honza/vim-snippets.git
+[submodule "vim/.vim.symlink/pack/bundle/start/asyncomplete.vim"]
+	path = vim/.vim.symlink/pack/bundle/start/asyncomplete.vim
+	url = https://github.com/prabirshrestha/asyncomplete.vim.git
+[submodule "vim/.vim.symlink/pack/bundle/start/ale"]
+	path = vim/.vim.symlink/pack/bundle/start/ale
+	url = https://github.com/dense-analysis/ale.git
+[submodule "vim/.vim.symlink/pack/bundle/start/fzf-vim"]
+	path = vim/.vim.symlink/pack/bundle/start/fzf-vim
+	url = https://github.com/junegunn/fzf.vim.git
+[submodule "vim/.vim.symlink/pack/bundle/start/asyncomplete-ultisnips"]
+	path = vim/.vim.symlink/pack/bundle/start/asyncomplete-ultisnips
+	url = https://github.com/prabirshrestha/asyncomplete-ultisnips.vim.git

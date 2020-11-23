@@ -3,7 +3,6 @@ filetype off                  " required
 set number                    " turn on line numbers
 set relativenumber            " turn on relative line numbers
 set hidden                    " Allow switching buffers without saving
-set cursorline                " Highlight current line so you don't have to search for the cursor
 
 filetype plugin indent on    " required
 
@@ -64,8 +63,20 @@ autocmd VimResized * | set columns=120
 " Show current edit mode, and wether or not file has been edited since last save
 :set showmode
 
+" Show the count of hits on your current search
+:set shortmess-=S
+
 " case insensitive searches
 :set ignorecase
+
+let g:netrw_liststyle = 3      " netrw tree style
+let g:netrw_banner = 0         " netrw disable banner
+let g:netrw_winsize = 15       " Set netrw width
+let g:netrw_browse_split = 4   " Open selected file in previous tab
+
+" VIm popup menu coloring
+hi Pmenu ctermbg=black
+hi Pmenu ctermfg=green
 
 ":filetype plugin on
 ":helptags ~/.vim/doc
@@ -92,3 +103,6 @@ vnoremap < <gv
 
 " FZF mappings
 nnoremap <Leader>s :<C-u>FZF<CR>
+
+" Repeat last macro with a single key
+nnoremap <C-b> @@
