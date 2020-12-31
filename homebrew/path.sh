@@ -1,2 +1,2 @@
-PATH=$PATH:/home/linuxbrew/.linuxbrew/bin
+PATH=/home/linuxbrew/.linuxbrew/bin:$PATH
 
